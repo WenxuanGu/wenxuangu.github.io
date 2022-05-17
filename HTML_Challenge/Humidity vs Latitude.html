@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<!-- Insert title here -->
+  <title>Humidity & Latitude Analysis</title>
+
+  <!-- reset css -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- A black horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-sm navbar-blue">
+    <a class="nav-link" href="index.html">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    </a>
+    <ul class="navbar-nav">
+        <!-- Home button -->
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">  
+            Weather and Latitude</a>
+        </li>
+    </ul>
+
+    <!-- right side of navbar -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+            aria-haspopup="true" aria-expanded="false">Plot</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Temperature vs Latitude.html">Temperature</a>
+                <a class="dropdown-item" href="Humidity vs Latitude.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudiness vs Latitude.html">Cloudiness</a>
+                <a class="dropdown-item" href="Windiness vs Latitude.html">Wind Speed </a>
+            </div>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="Comparison.html">Comparison
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Data.html">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div style="background-color:blue;">
+    <div class='row'>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+  </div> <!-- ends background color-->
+
+    <!-- Header -->
+<div class="container-fluid">
+    <div class='row align-items-center'>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+        <div class="col-lg-7">
+            <h1 class="intro">Humidity and Latitude</h1>
+            </br>
+            </br>
+        </div>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+    </div> 
+    
+    <div class="row">
+        <div class="row align-items-center" style="width: 60%; margin:auto">
+            </br>
+            <a target="_blank" href="HTML_Data/Lat%20vs%20Hum.png">
+                <img src="HTML_Data/Lat%20vs%20Hum.png"
+                alt = "Humidity vs. Latitude" height="300" width="400">
+            </a>
+        </div>
+        <div class="row align-items-center" style="width: 60%; margin:auto">
+            <p >Humidity varies a lot among cities at the same Latitude. By viewing the graph, we could tell  
+                that humidity would tend to decrease at certain latitudes. Typically, from -20 degrees to 0 degrees 
+                latitude and at around 40 degrees to approximately 70 degrees latitude. As latitude decreases from 
+                those range of latitudes, the cluster of cities would relatively decrease as well. 
+                </br></br>
+                Click the navigation bar or images below for more graphs and analyses. 
+            </p>
+        </div>
+    </div>
+</div> <!-- ends main content container after gold div bar -->  
+
+    <!-- Visualizations -->
+        <!-- Header -->
+    <div id = "bottom_visual_page" class="container"> 
+          <div class="row">
+              <div class="col-md-12">
+                  </br> <!-- line break to push header down -->
+              </div>
+          </div>
+          <hr> <!-- horizontal line -->
+
+          <!-- Header content for visualization section -->
+        <div id = "bottom_visual_page" class="container"> 
+          <div class="row align-items-center">
+              <div class = 'col-md-4'></br></br></br></div>
+              <div class="col-lg-4">
+                  <h3 id="bot_header">Graphic Visualizations</h3>
+              </div>
+              <div class = 'col-md-4'></br></br></br></div>
+          </div>
+  
+          <div class="row align-items-center">
+            <div class="col-lg-3">
+                <a href="Temperature vs Latitude.html">
+                    <img src="HTML_Data/Lat%20vs%20Temp.png"
+                    alt = "Maximum Temperature vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Humidity vs Latitude.html">
+                    <img src="HTML_Data/Lat%20vs%20Hum.png"
+                    alt = "Humidity vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Cloudiness vs Latitude.html">
+                    <img src="HTML_Data/Lat%20vs%20Cloud.png"
+                    alt = "Cloudiness vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Windiness vs Latitude.html">
+                    <img src="HTML_Data/Lat%20vs%20Wind.png"
+                    alt = "Windspeed vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+        </div>
+        <hr>
+      </div>
+
+      <style>
+        p {
+     text-align: center;
+     font-size: 20px;
+     margin-bottom: 200px;
+     /* Bold the text. */
+     font-weight: bold; }
+
+  /* All img tags */
+  img {
+    /* 
+      Center a block element in the middle of its enclosing tag.
+      When you use the "auto" rule on both left and right margins, 
+      your browser will do the math necessary to center a block element.
+      */
+    margin-left: auto;
+    margin-right: auto;
+    /* Block display (more on this later) */
+    display: block;
+  }
+ 
+     h1 {
+     /* Put a 15-pixel margin at the bottom of the heading. */
+     margin-bottom: 10px;
+     margin-right: 350px;
+     /* Change the size of your font to 60 pixels high. */
+     font-size: 50px;
+     /* This will color the heading font white. */
+     color: blue;
+     /* Align the text to the center of its enclosing element (e.g. div). */
+     text-align: center;
+     /* Solid text. */
+     text-decoration: solid;  
+   }
+   </style>
+
+
+
+</body>
+</html>
